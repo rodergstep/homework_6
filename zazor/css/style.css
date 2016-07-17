@@ -140,7 +140,7 @@ header {
 	display: inline-block;
 	height: 34px;
 	}
-.active  {
+.main-menu li:hover  {
 	background: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
 	border-radius: 15px;	
 	}
@@ -439,8 +439,10 @@ padding-left: 11px;
 	}
 .side-menu-block a {
 	display: block;
+	height: 13px;
 	margin-left: 35px;
 	padding: 6px 0px 6px 10px;
+
 	font-family: "Lucida Sans Unicode";
 	font-size: 13px;
 	color: #465961;
@@ -511,16 +513,23 @@ figure a {
 	color: #465961;
 	text-decoration: none;
 	}
-						/* BRANDLOGO */
 .brand {
-	background: url(../img/checkbox.png) 7% 76% no-repeat;
+	margin: 3px 0px 8px -16px;
 	}
-.brand label {
+.brand:first-child {
+	margin-top: 5px;
+}
+.brand span {
 	display: inline-block;
-	padding: 9px 0px 3px 10px;
+	padding-left: 27px;
+	vertical-align: middle;
+	background: url(../img/checkbox.png) 5% 0% no-repeat;
 	}
 .brand input {
-	 visibility: hidden;
+	visibility: hidden;
+	}
+.brand input:checked + span{
+	 background: url(../img/checkbox.png) 5% 100% no-repeat;
 	} 
 .side-item-title-right {
 	width: 104px;
@@ -532,7 +541,7 @@ figure a {
 .choose {
 	width: 82px;
 	height: 26px;
-	margin: 20px 0px 0px 10px;
+	margin: 10px 0px 0px 10px;
 	padding-bottom: 4px;
 	font-size: 12px;
 	color: #fff;
@@ -544,6 +553,7 @@ figure a {
 	-moz-box-shadow: 1px 3px 3px 0px rgba(206,206,206,1);
 	box-shadow: 1px 3px 3px 0px rgba(206,206,206,1);
 	}
+							/* BRANDLOGO */
 .brandlogo {
 	width: 676px;
 	height: 27px;
